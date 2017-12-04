@@ -88,7 +88,7 @@ $(document).ready(function() {
 		$(newItem).find('.content-copy').text(result.title);
 		$(newItem).find('.article_snippet').text(result.description);
 
-		$('.grid').append(newItem)
+		$('.grid > .row').append(newItem)
   }
 
   function fetchRSS(feedURL, feedResults) {
